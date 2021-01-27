@@ -9,6 +9,7 @@ export default function Home() {
     <div>
       <Header>
         <MenuButton />
+        <h1>Meu Portfólio</h1>
       </Header>
     </div>
   );
