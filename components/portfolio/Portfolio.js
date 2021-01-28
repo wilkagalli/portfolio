@@ -7,6 +7,7 @@ function Portfolio() {
   return (
     <>
       <section id="portfolio" className={classes.portfolio}>
+        <div className={classes.mask}></div>
         <div className={classes.container}>
           <div className={classes.row}>
             <div className={classes.section}>

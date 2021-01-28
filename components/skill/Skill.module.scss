@@ -100,6 +100,14 @@
       margin: 0 15px 15px 0;
       border-width: 2px;
       border-style: solid;
+      transition: transform 1s;
+
+      &:hover {
+        color: black;
+        text-align: center;
+        background: rgb(201, 219, 245);
+        transform: translateX(10px) scale(1.2);
+      }
     }
   }
 }

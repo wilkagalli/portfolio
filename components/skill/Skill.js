@@ -25,6 +25,7 @@ function Skill() {
             <li>Bootstrap</li>
             <li>Javascript</li>
             <li>HTML</li>
+            <li>CSS</li>
             <li>Designer Responsivo</li>
             <li>Front-End</li>
           </ul>
