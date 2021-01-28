@@ -54,6 +54,10 @@
   img {
     width: 450px;
     justify-self: center;
+
+    @media screen and (max-width: 768px) {
+      width: 290px;
+    }
   }
 }
 
@@ -82,7 +86,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 100px 0px 0;
+    padding: 33px 70px 0px 0;
   }
 
   ul {
