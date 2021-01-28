@@ -1,12 +1,97 @@
-.Header {
-  background-color: #eeeeee;
-  padding: 70px 0px 155px;
+// .Header {
+//   background-color: #eeeeee;
+//   padding: 70px 0px 155px;
+//   position: relative;
+// }
+
+.introduction {
+  position: relative;
+  height: 100vh;
+  background: url(/assets/remote.jpg) center center no-repeat fixed;
+  background-size: cover;
+
+  h1 {
+    z-index: 1;
+    font-size: 4em;
+    margin: 0 0 10px;
+    text-transform: lowercase;
+    font-weight: 200;
+    line-height: 1;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    display: block;
+
+    strong {
+      color: #00bcd4;
+      font-weight: 5000;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    :after :before {
+      box-sizing: border-box;
+    }
+  }
 }
-.divide {
-  background-image: url(/assets/white_divide.png);
-  background-position: top center;
-  background-size: 100% 126px;
-  height: 126px;
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-top: -126px;
+  height: 100%;
+  background: url(/assets/pattern-photo.png) left top;
 }
+
+.arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+
+.container,
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.col {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100vh;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+// @media (min-width: 782px)
+// .container {
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     width: 782px;
+//     max-width: 100%;
+// }
+
+// @media (min-width: 782px)
+// .row {
+//     margin-right: -15px;
+//     margin-left: -15px;
+// }

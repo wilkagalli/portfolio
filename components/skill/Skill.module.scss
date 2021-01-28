@@ -1,0 +1,121 @@
+.iconsBkg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  background: #ffc9b2;
+  color: #444957;
+  padding: 110px 0px 300px 0px;
+
+  @media screen and (max-width: 980px) {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    display: block;
+    font-size: 1.2em;
+    align-items: flex-start;
+    font-weight: bold;
+  }
+
+  h2 {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+// #d50075
+
+.descricao {
+  font-weight: 200;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 25px;
+  padding: 80px 20px 110px 80px;
+  background: url(/assets/pattern-2rb.png) bottom center repeat #d50075;
+  color: white;
+  position: relative;
+
+  &::before {
+    background: #d50075;
+    position: absolute;
+    right: 0;
+    transform: rotate(3deg);
+    transform-origin: top right;
+    width: 150%;
+    height: 100px;
+    top: 0;
+    content: "";
+  }
+
+  img {
+    width: 450px;
+    justify-self: center;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 25px;
+  padding: 0 100px 160px 0;
+  background: url(/assets/pattern-1la.png) bottom center repeat #00a8a8;
+  color: white;
+  position: relative;
+
+  &::before {
+    background: #00a8a8;
+    position: absolute;
+    right: 0;
+    transform: rotate(3deg);
+    transform-origin: top right;
+    width: 150%;
+    height: 100px;
+    top: 0;
+    content: "";
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 100px 0px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      border-color: #fff;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      float: left;
+      display: block;
+      list-style: none;
+      font-weight: 400;
+      padding: 5px 15px;
+      margin: 0 15px 15px 0;
+      border-width: 2px;
+      border-style: solid;
+    }
+  }
+}
+
+.iconsHeading {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.iconsHeading img {
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}

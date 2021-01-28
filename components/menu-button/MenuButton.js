@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuWrap from "../menu-wrap/MenuWrap";
 import classes from "./MenuButton.module.scss";
 
@@ -6,6 +6,15 @@ import classes from "./MenuButton.module.scss";
 
 function MenuButton() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    addEventListener("click", (e) => {
+      if (!e.target.className.includes("MenuButton")) {
+        setIsOpen(false);
+      }
+    });
+  });
+
   return (
     <>
       <MenuWrap isOpen={isOpen}></MenuWrap>
