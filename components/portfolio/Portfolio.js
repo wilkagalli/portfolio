@@ -65,6 +65,46 @@ function Portfolio() {
               </ul>
             </div>
           </div>
+          <div className={classes.gifs}>
+            <div className={classes.project}>
+              <img width="350" height="600" src="/assets/animated.gif"></img>
+              <div className={`${classes.textProject} ${classes.green}`}>
+                <h1>TopCasaFina Arquitetura</h1>
+                <p>
+                  Esse foi um projeto desenvolvido em um dos cursos. Trata-se de
+                  uma pagina para uma empresa de arquitetura em que permite ver
+                  os trabalhos desenvolvidos pela empresa, bem como permite o
+                  usuário fazer um cadastro para solicitar informações.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://architecture-ruddy.vercel.app/"
+                >
+                  →
+                </a>
+              </div>
+            </div>
+            <div className={classes.project}>
+              <img
+                width="350"
+                height="600"
+                src="/assets/Webp.net-gifmaker.gif"
+              ></img>
+              <div className={`${classes.textProject} ${classes.pink}`}>
+                <h1>Web Site - BLOG</h1>
+                <p>
+                  Esse é um projeto pessoal para testar os conhecimentos
+                  adquiridos no curso, no qual apliquei as técnicas de navegação
+                  entre páginas, coloquei um carousel e vídeo na página
+                  principal. Bem como a possibilidade de filtras receitas e
+                  também coloquei botões para curtir e comentar.
+                </p>
+                <a target="_blank" href="https://website-steel-two.vercel.app/">
+                  →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

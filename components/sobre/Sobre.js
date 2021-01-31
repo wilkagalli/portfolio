@@ -23,7 +23,7 @@ function Sobre() {
             bastante. Meu objetivo é conseguir um emprego do zero e construir e
             crescer uma carreira na área de tecnologia, meu foco é o
             desenvolvimento front-end pois foi a area que mais me identifiquei
-            na tecnologia e pessoalmente sou uma pessoa muito detalhada!
+            na tecnologia e pessoalmente sou uma pessoa muito detalhista!
           </h2>
         </div>
 

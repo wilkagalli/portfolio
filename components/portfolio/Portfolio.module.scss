@@ -2,6 +2,7 @@
   min-height: 100vh;
   background: url(/assets/portfolio.jpg) center center no-repeat fixed #000;
   background-size: cover;
+  position: relative;
 
   :after,
   :before {
@@ -9,12 +10,17 @@
   }
 
   .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     padding-top: 50px;
     padding-bottom: 100px;
     padding-right: 15px;
     padding-left: 15px;
-    width: 782px;
     max-width: 100%;
+
+    @media screen and (max-width: 1080px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   ul {
@@ -62,9 +68,95 @@
   }
 }
 
+.gifs {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  position: relative;
+  height: 600px;
+  width: 350px;
+  margin: 10px;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.project:hover .textProject {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1.1);
+  transition: z-index 0.5s step-start, opacity 0.5s linear, transform 0.5s;
+  border-radius: 10px;
+}
+
+.textProject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: z-index 0.5s step-end, opacity 0.5s linear, transform 0.5s;
+
+  &.green {
+    background-color: #00bcd4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: "Open Sans Condensed", sans-serif;
+
+    h1 {
+      font-size: xx-large;
+    }
+    p {
+      font-size: larger;
+    }
+    a {
+      font-size: xxx-large;
+      align-self: flex-start;
+    }
+  }
+
+  &.pink {
+    background-color: #d50075;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: "Open Sans Condensed", sans-serif;
+
+    h1 {
+      font-size: xx-large;
+    }
+    p {
+      font-size: larger;
+    }
+    a {
+      font-size: xxx-large;
+      align-self: flex-start;
+    }
+  }
+}
+
+.textPorject h3 {
+  text-align: center;
+}
 .mask {
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
