@@ -15,19 +15,27 @@ function Sobre() {
             Sou Wilka Galli, uma programadora Front-End morando atualmente em
             Portugal. Sou graduada em Direito, mas após 7 anos de carreira
             resolvi mudar de profissão e expandir os horizontes para fazer
-            coisas novas e descobri esse novo mundo de tecnologia :) Com a ajuda
-            e motivação do meu marido (profissional da área a quase 10 anos)
-            iniciei e concluí cursos online de desenvolvimento web. Confesso que
-            ter um tutor particular para me ajudar nos conceitos de arquitetura
-            e mais questões centrais sobre o mundo da programação ajudou
-            bastante. Meu objetivo é conseguir um emprego do zero e construir e
-            crescer uma carreira na área de tecnologia, meu foco é o
-            desenvolvimento front-end pois foi a area que mais me identifiquei
-            na tecnologia e pessoalmente sou uma pessoa muito detalhista!
+            coisas novas e descobri esse novo mundo de tecnologia :)
+            <br />
+            <br />
+            <br />
+            Com a ajuda e motivação do meu marido (profissional da área a quase
+            10 anos) iniciei e concluí cursos online de desenvolvimento web.
+            Confesso que ter um tutor particular para me ajudar nos conceitos de
+            arquitetura e mais questões centrais sobre o mundo da programação
+            ajudou bastante.
+            <br />
+            <br />
+            <br />
+            Meu objetivo é conseguir o meu primeiro desafio profissional na area
+            da programação e construir e crescer uma carreira na área de
+            tecnologia, meu foco é o desenvolvimento front-end pois foi a area
+            que mais me identifiquei na tecnologia e pessoalmente sou uma pessoa
+            muito detalhista!
           </h2>
         </div>
 
-        <img src="./assets/foto.png"></img>
+        <img src="./assets/foto.jpeg"></img>
       </div>
     </>
   );

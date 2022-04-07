@@ -40,21 +40,22 @@
     grid-template-columns: 1fr;
   }
 
-  &::before {
-    background: #d50075;
-    position: absolute;
-    right: 0;
-    transform: rotate(3deg);
-    transform-origin: top right;
-    width: 150%;
-    height: 100px;
-    top: 0;
-    content: "";
-  }
+  // &::before {
+  //   background: #3c3c3c;
+  //   position: absolute;
+  //   right: 0;
+  //   transform: rotate(3deg);
+  //   transform-origin: top right;
+  //   width: 150%;
+  //   height: 100px;
+  //   top: 0;
+  //   content: "";
+  // }
 
   img {
     width: 450px;
     justify-self: center;
+    margin-top: 60px;
 
     @media screen and (max-width: 768px) {
       width: 290px;

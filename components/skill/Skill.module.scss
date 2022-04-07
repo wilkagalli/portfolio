@@ -24,6 +24,7 @@
     margin: 0;
   }
 }
+
 // #d50075
 
 .descricao {
@@ -60,6 +61,7 @@
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
   line-height: 25px;
   padding: 0 100px 160px 0;
   background: url(/assets/pattern-1la.png) bottom center repeat #00a8a8;
@@ -82,10 +84,47 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 33px 60px 0px 0;
+    padding: 33px 50px 0px;
   }
 
-  ul {
+  ul.medal {
+    // list-style: none;
+
+    list-style-image: url(/assets/medal.png);
+    font-size: 15px;
+    font-weight: 200;
+
+    li {
+      margin-bottom: 10px;
+
+      background-size: 0% 100%;
+      background-position: 0% 100%;
+      background-image: linear-gradient(#f0a830, #f0a830);
+      background-repeat: no-repeat;
+      transition: background-size 0.5s;
+
+      &:hover {
+        background-size: 100% 100%;
+      }
+
+      ::before {
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: -5px;
+        bottom: 0;
+        left: -10px;
+        right: 0;
+        width: 0;
+        height: calc(100% + 10px);
+        background: white;
+      }
+    }
+  }
+
+  ul.badge {
     list-style: none;
     padding: 0;
     li {
@@ -126,4 +165,14 @@
   height: 50px;
   margin-right: 10px;
   margin-bottom: 5px;
+}
+
+.separador {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
 }
